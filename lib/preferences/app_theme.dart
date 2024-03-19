@@ -9,5 +9,6 @@ class AppTheme {
 }
 
 class TextStyles {
-  static const TextStyle firstLabel = TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold);
+  static const TextStyle accountLabel = TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold);
+  static const TextStyle itemLabel = TextStyle(fontSize: 24, color: AppTheme.labelText, fontWeight: FontWeight.bold);
 }
