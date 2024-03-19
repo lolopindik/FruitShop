@@ -71,6 +71,10 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          const Padding(
+            padding: EdgeInsets.only(left: 30, top: 22),
+            child: Text("Popular item", style: TextStyles.itemLabel,),
+          ),
         ],
       ),
     );
