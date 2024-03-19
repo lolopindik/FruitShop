@@ -7,3 +7,7 @@ class AppTheme {
   static const Color labelText = Color.fromARGB(255,0,74,74);//304250
   static const Color elemntsBackground = Colors.white;//FFFFFF
 }
+
+class TextStyles {
+  static const TextStyle firstLabel = TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold);
+}

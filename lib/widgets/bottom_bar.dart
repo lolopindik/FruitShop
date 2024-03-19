@@ -7,7 +7,7 @@ Widget buildBottomBar(BuildContext context) {
     child: Container(
       height: MediaQuery.of(context).size.height * 0.1,
       alignment: Alignment.center,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(15), 
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), 
       color: AppTheme.mainColor,),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
