@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:fruit_shop/preferences/app_theme.dart';
+import 'package:fruit_shop/types/product.dart'; // Импортируйте ваш файл с классом Product
 import 'package:fruit_shop/widgets/bottom_bar.dart';
 import 'package:fruit_shop/widgets/filter.dart';
+import 'package:fruit_shop/widgets/product_cards.dart';
 import 'package:fruit_shop/widgets/searh.dart';
 
 class HomePage extends StatefulWidget {
@@ -46,7 +48,7 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(height: 30),
                         Text("Hi User!"),
                         Text("Let's get some item!",
-                            style: TextStyles.accountLabel),
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                       ],
                     ),
                   ),
@@ -72,11 +74,40 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(left: 30, top: 22),
-            child: Text("Popular item", style: TextStyles.itemLabel,),
+            padding: EdgeInsets.only(left: 30, top: 10),
+            child: Text("Popular item", style: TextStyles.itemLabel),
+          ),
+          const SizedBox(height: 20),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.3, 
+            child: PageView.builder(
+              itemCount: 2,
+              itemBuilder: (context, index) {
+                final startIndex = index * 2;
+                final endIndex = startIndex + 1;
+                return Row(
+                  children: [
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: ProductCard(product: productList[startIndex]),
+                      ),
+                    ),
+                    if (endIndex < productList.length)
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 10),
+                          child: ProductCard(product: productList[endIndex]),
+                        ),
+                      ),
+                  ],
+                );
+              },
+            ),
           ),
         ],
       ),
     );
   }
 }
+
