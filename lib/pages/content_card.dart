@@ -131,7 +131,7 @@ class ContentCard extends StatelessWidget {
                           'Description',
                           style: TextStyles.contentLabelDescription,
                         ),
-                        // Text(type),
+                        Text(type),
                       ],
                     ),
                   ),
