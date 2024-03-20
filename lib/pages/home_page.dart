@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
-                          SizedBox(height: 20),
+                          SizedBox(height: 30),
                           Text("Hi User!"),
                           Text("Let's get some item!",
                               style: TextStyle(
