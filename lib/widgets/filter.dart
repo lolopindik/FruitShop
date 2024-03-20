@@ -10,11 +10,9 @@ Widget buildfilter(BuildContext context) {
       borderRadius: BorderRadius.circular(20),
     ),
     child: IconButton(
-      onPressed: () {
-        // Обработка нажатия на иконку меню
-      },
+      onPressed: () {},
       icon: const Icon(Icons.menu, color: AppTheme.sceletonBackground),
-      iconSize: 24,
+      iconSize: 26,
     ),
   );
 }

@@ -13,7 +13,7 @@ Widget buildSearchBar(BuildContext context) {
         filled: true,
         fillColor: AppTheme.elemntsBackground,
         contentPadding:
-            const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
+            const EdgeInsets.symmetric(horizontal: 30, vertical: 20),
         prefixIcon: const Icon(Icons.search),
       ),
     ),
