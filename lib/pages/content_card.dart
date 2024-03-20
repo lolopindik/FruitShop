@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fruit_shop/preferences/app_theme.dart';
+import 'package:fruit_shop/widgets/content_appbar.dart';
 
 class ContentCard extends StatelessWidget {
   final String pathPhoto;
@@ -16,14 +18,8 @@ class ContentCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-      Text(
-        name,
-        style: const TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    ]));
+      backgroundColor: AppTheme.sceletonBackground,
+      appBar: buildAppBar(context),
+    );
   }
 }
