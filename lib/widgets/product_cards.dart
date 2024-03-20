@@ -16,6 +16,7 @@ class ProductDoubleCard extends StatelessWidget {
           MaterialPageRoute(
             builder: (context) => ContentCard(
                 pathPhoto: product.pathPhoto,
+                type: product.type,
                 price: product.price,
                 description: product.description,
                 name: product.name),
@@ -69,27 +70,19 @@ class ProductDoubleCard extends StatelessWidget {
                   ),
                 ),
                 const Spacer(),
-                InkWell(
-                  onTap: () {},
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.11,
-                    height: MediaQuery.of(context).size.width * 0.11,
-                    decoration: const BoxDecoration(
-                      color: AppTheme.mainColor,
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20), // Верхний правый угол
-                        bottomRight: Radius.circular(20), // Нижний левый угол
-                      ),
+                Container(
+                  width: MediaQuery.of(context).size.width * 0.11,
+                  height: MediaQuery.of(context).size.width * 0.11,
+                  decoration: const BoxDecoration(
+                    
+                    color: AppTheme.mainColor,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(20), // Верхний правый угол
+                      bottomRight: Radius.circular(20), // Нижний левый угол
                     ),
-                    child: const Center(
-                      child: Text(
-                        '+',
-                        style: TextStyle(
-                          color: AppTheme.elemntsBackground,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ),
+                  ),
+                  child: const Center(
+                    child:  Icon(Icons.add, color: AppTheme.sceletonBackground,)
                   ),
                 )
               ],
@@ -115,6 +108,7 @@ class ProductSoloCard extends StatelessWidget {
           MaterialPageRoute(
             builder: (context) => ContentCard(
                 pathPhoto: product.pathPhoto,
+                type: product.type,
                 price: product.price,
                 description: product.description,
                 name: product.name),
@@ -175,27 +169,18 @@ class ProductSoloCard extends StatelessWidget {
             Positioned(
               bottom: 0,
               right: 0,
-              child: InkWell(
-                onTap: () {},
-                child: Container(
-                  width: MediaQuery.of(context).size.height * 0.07,
-                  height: MediaQuery.of(context).size.width * 0.11,
-                  decoration: const BoxDecoration(
-                    color: AppTheme.mainColor,
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      bottomRight: Radius.circular(20),
-                    ),
+              child: Container(
+                width: MediaQuery.of(context).size.height * 0.07,
+                height: MediaQuery.of(context).size.width * 0.11,
+                decoration: const BoxDecoration(
+                  color: AppTheme.mainColor,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    bottomRight: Radius.circular(20),
                   ),
-                  child: const Center(
-                    child: Text(
-                      '+',
-                      style: TextStyle(
-                        color: AppTheme.elemntsBackground,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ),
+                ),
+                child: const Center(
+                  child:  Icon(Icons.add, color: AppTheme.sceletonBackground,)
                 ),
               ),
             ),

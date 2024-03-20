@@ -15,4 +15,5 @@ class TextStyles {
   static const TextStyle itemCard = TextStyle(fontSize: 16, color: AppTheme.labelText, fontWeight: FontWeight.bold);
   static const TextStyle itemSub = TextStyle(fontSize: 16, color: AppTheme.mainColor, fontWeight: FontWeight.w900);
   static const TextStyle itemhintSub = TextStyle(fontSize: 11, color: AppTheme.elemntsHintSub);
+  static const TextStyle contentLabelDescription = TextStyle(fontSize: 22, color: AppTheme.mainColor, fontWeight: FontWeight.bold);
 }
