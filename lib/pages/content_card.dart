@@ -63,10 +63,13 @@ class ContentCardState extends State<ContentCard> {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text(
-                              widget.name,
-                              style: TextStyles.itemLabel,
-                              overflow: TextOverflow.ellipsis,
+                            SizedBox(
+                              width: 180,
+                              child: Text(
+                                widget.name,
+                                style: TextStyles.itemLabel,
+                                overflow: TextOverflow.ellipsis,
+                              ),
                             ),
                             Container(
                               width: 110,
