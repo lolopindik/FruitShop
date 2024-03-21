@@ -39,7 +39,7 @@ class ContentCardState extends State<ContentCard> {
                 child: SizedBox(
                   width: 250,
                   height: 250,
-                  child: Image.network(
+                  child: Image.asset(
                     widget.pathPhoto,
                     fit: BoxFit.cover,
                   ),
