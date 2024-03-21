@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: buildBottomBar(context),
+      bottomNavigationBar: const buildBottomBar(),
       backgroundColor: AppTheme.sceletonBackground,
       body: SingleChildScrollView(
         child: Column(
