@@ -16,4 +16,6 @@ class TextStyles {
   static const TextStyle itemSub = TextStyle(fontSize: 16, color: AppTheme.mainColor, fontWeight: FontWeight.w900);
   static const TextStyle itemhintSub = TextStyle(fontSize: 11, color: AppTheme.elemntsHintSub);
   static const TextStyle contentLabelDescription = TextStyle(fontSize: 22, color: AppTheme.mainColor, fontWeight: FontWeight.bold);
+  static const TextStyle itemGgeySub = TextStyle(fontSize: 18, color: AppTheme.elemntsHintSub);
+  static const TextStyle itemBasketSub = TextStyle(fontSize: 20, color: AppTheme.elemntsBackground);
 }
