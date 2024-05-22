@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(backgroundColor: AppTheme.sceletonBackground, toolbarHeight: 0,),
       bottomNavigationBar: const buildBottomBar(),
       backgroundColor: AppTheme.sceletonBackground,
       body: SingleChildScrollView(
@@ -28,7 +29,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Padding(
-                    padding: const EdgeInsets.only(top: 30, left: 20),
+                    padding: const EdgeInsets.only(top: 20, left: 20),
                     child: Container(
                       width: MediaQuery.of(context).size.width * 0.15,
                       height: MediaQuery.of(context).size.width * 0.15,
@@ -45,7 +46,7 @@ class _HomePageState extends State<HomePage> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
-                          SizedBox(height: 30),
+                          SizedBox(height: 20),
                           Text("Hi User!"),
                           Text("Let's get some item!",
                               style: TextStyle(
